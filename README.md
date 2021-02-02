@@ -2,9 +2,11 @@
   <h1>Fundamentos de Bases de Datos</h1>
 </div>
 
-Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de Platzi.
+Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de [Platzi](https://platzi.com/r/EliazBobadilla).
 
-Si llegas aqui desde [Platzi]()
+Si llegas aqui desde [Platzi](https://platzi.com/r/EliazBobadilla), y ya manejas [Git y GitHub](https://platzi.com/clases/git-github/), te recomiendo hacerle un  ```git clone``` para que lo trabajes de forma local.
+
+**Si este repositorio te ayudo, o simplemente te gusto,considera darle una estrella.**
 
 ### Indice
 - [Conceptos Básicos y Contexto Histórico](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#CONCEPTOS-BÁSICOS-Y-CONTEXTO-HISTÓRICO)

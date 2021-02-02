@@ -4,7 +4,7 @@
 
 Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de [Platzi](https://platzi.com/r/EliazBobadilla).
 
-Si llegas aqui desde [Platzi](https://platzi.com/r/EliazBobadilla), y ya manejas [Git y GitHub](https://platzi.com/clases/git-github/), te recomiendo hacerle un  ```git clone``` para que lo trabajes de forma local.
+Si llegas aqui desde [Platzi](https://platzi.com/r/EliazBobadilla), y ya manejas [Git y GitHub](https://platzi.com/clases/git-github/), te recomiendo hacerle un  ```git clone``` para que lo trabajes de forma local.Si no simplemente descarga el codigo fuente en formato *zip*.
 
 **Si este repositorio te ayudo, o simplemente te gusto,considera darle una estrella.**
 

@@ -4,8 +4,8 @@
 
 Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de Platzi. 
 
-## TABLA DE CONTENIDOS
-- [CONCEPTOS BÁSICOS Y CONTEXTO HISTÓRICO](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#CONCEPTOS-BÁSICOS-Y-CONTEXTO-HISTÓRICO)
+## Indice
+- [Conceptos Básicos y Contexto Histórico](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#CONCEPTOS-BÁSICOS-Y-CONTEXTO-HISTÓRICO)
   - [Historia del almacenamiento de la información](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Historia-del-almacenamiento-de-la-información)
   - [Surgimiento de las bases de datos](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Surgimiento-de-las-bases-de-datos)
 - [INTRODUCCIÓN A LAS BASES DE DATOS RELACIONALES](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#INTRODUCCIÓN-A-LAS-BASES-DE-DATOS-RELACIONALES)

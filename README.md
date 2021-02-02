@@ -8,7 +8,7 @@ Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundam
 - [Conceptos Básicos y Contexto Histórico](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#CONCEPTOS-BÁSICOS-Y-CONTEXTO-HISTÓRICO)
   - [Historia del almacenamiento de la información](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Historia-del-almacenamiento-de-la-información)
   - [Surgimiento de las bases de datos](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Surgimiento-de-las-bases-de-datos)
-- [INTRODUCCIÓN A LAS BASES DE DATOS RELACIONALES](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#INTRODUCCIÓN-A-LAS-BASES-DE-DATOS-RELACIONALES)
+- [Introducción a las bases de Datos Relacionales](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#INTRODUCCIÓN-A-LAS-BASES-DE-DATOS-RELACIONALES)
   - [Historia de las RDB](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Historia-de-las-RDB)
   - [Entidades y atributos](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Entidades-y-atributos)
   - [Entidades del Platziblog](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Entidades-del-Platziblog)

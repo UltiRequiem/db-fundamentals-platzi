@@ -137,8 +137,8 @@ Especiales (almacenados y derivados)| Que puedes representarse con líneas punte
 <br>
 
  Finalmente debemos conocer que las entidades pueden ser <br>
-> -Entidades fuertes: Son entidades que pueden sobrevivir por si solo. Al leer la tabla sabes que son las entidades (se encierra en un recuadro). <br>
-> -Entidades débiles: No puede existir sin una entidad fuerte. Al leer la tabla no puedes saber que son las entidades (se encierra en un recuadro doble). En esto podemos diferenciar 2 subtipos: las **Identidades Débiles por Identidad** (no se diferencian entre sí más que por la clave de su identidad fuerte) y las **Identidades Débiles por Existencia** (que se les asigna una clave propia, pero su existencia sigue siendo dependiente de una fuerte).
+ -Entidades fuertes: Son entidades que pueden sobrevivir por si solo. Al leer la tabla sabes que son las entidades (se encierra en un recuadro). <br>
+ -Entidades débiles: No puede existir sin una entidad fuerte. Al leer la tabla no puedes saber que son las entidades (se encierra en un recuadro doble). En esto podemos diferenciar 2 subtipos: las **Identidades Débiles por Identidad** (no se diferencian entre sí más que por la clave de su identidad fuerte) y las **Identidades Débiles por Existencia** (que se les asigna una clave propia, pero su existencia sigue siendo dependiente de una fuerte).
 
 <br>
 <div align="center"> 
@@ -149,8 +149,8 @@ Especiales (almacenados y derivados)| Que puedes representarse con líneas punte
 
 ## Entidades del Platziblog
 
-> Durante el curso desarrollares un proyecto completo de inicio a fin basandonos en un Platziblog. Este proyecto nos presenta un contexto familiar y nos representará retos muy interesantes. <br>
-> -Primer paso: Identificar las entidades.
+ Durante el curso desarrollares un proyecto completo de inicio a fin basandonos en un Platziblog. Este proyecto nos presenta un contexto familiar y nos representará retos muy interesantes. <br>
+ -Primer paso: Identificar las entidades.
 <br>
 <div align="center"> 
   <img src="src/13.webp" width="350">
@@ -158,7 +158,7 @@ Especiales (almacenados y derivados)| Que puedes representarse con líneas punte
 </div>
 <br>
 
-> Segundo paso: Pensar en los atributos.
+Segundo paso: Pensar en los atributos.
 <br>
 <div align="center"> 
   <img src="src/14.png" width="350">
@@ -171,13 +171,14 @@ Especiales (almacenados y derivados)| Que puedes representarse con líneas punte
 </div>
 <br>
 
-> Una recomendación importante que es que no utilicemos el correo del usuario como id. Es mejor generar un id independiente para cada usuario puesto que a pesar de que email es único, limitará la identificación cuando el usuario quiera cambiar su email.
+ Una recomendación importante que es que no utilicemos el correo del usuario como id. Es mejor generar un id independiente para cada usuario puesto que a pesar de que email es único, limitará la identificación cuando el usuario quiera cambiar su email.
 
 
 ## Relaciones
 
-> Las relaciones, clasifcamente son representadas por un rombo. Sirven para poder ligar o unir nuestras diferentes entidades. Por convención las relaciones son verbos que conectan entidades. <br>
-> *NOTA:Los atributos multivaluados (ejm. discos duros),pueden relacionarse de diversas formas con el resto de entidades. Por ello, se suele convertilos a entidad separadas, a este proceso de se le denomina "normalizar" (se explicará luego).*
+ Las relaciones, clasifcamente son representadas por un rombo. Sirven para poder ligar o unir nuestras diferentes entidades. Por convención las relaciones son verbos que conectan entidades. <br>
+
+*NOTA:Los atributos multivaluados (ejm. discos duros),pueden relacionarse de diversas formas con el resto de entidades. Por ello, se suele convertilos a entidad separadas, a este proceso de se le denomina "normalizar" (se explicará luego).*
 
 <br>
 <div align="center"> 
@@ -186,7 +187,7 @@ Especiales (almacenados y derivados)| Que puedes representarse con líneas punte
 </div>
 <br>
 
-> Y para comprender mejor cuántos de un lado pertenecen a cuántos del otro lado, surge el concepto de **CARDINALIDAD**. La cual es una propiedad de las relaciones que indica la cantidad y correspondencia con la que puede estar relacionada una entidad. 
+ Y para comprender mejor cuántos de un lado pertenecen a cuántos del otro lado, surge el concepto de **CARDINALIDAD**. La cual es una propiedad de las relaciones que indica la cantidad y correspondencia con la que puede estar relacionada una entidad. 
 
 ### Tipos de cardinalidad
 
@@ -226,7 +227,7 @@ Muchas-Muchas (N:N) | Las entidades de ambas relaciones pueden asociarse con var
 
 ### Cardinalidad muchos a muchos
 
-> La cardinalidad muchos a muchos es una de las cardinalidades mas especiales y que mas retos deberemos ir resolviendo a lo largo del desarrollo de una base de datos. *(Nota: En la representación grafica, se puede añidir una barra verticar a cada lado que simboliza que la relación es estricta, osea que SIEMPRE hay muchos a un lado y muchos al otro. Pero se usa para casos muy particulares).*
+ La cardinalidad muchos a muchos es una de las cardinalidades mas especiales y que mas retos deberemos ir resolviendo a lo largo del desarrollo de una base de datos. *(Nota: En la representación grafica, se puede añidir una barra verticar a cada lado que simboliza que la relación es estricta, osea que SIEMPRE hay muchos a un lado y muchos al otro. Pero se usa para casos muy particulares).*
 
 <br>
 <div align="center"> 
@@ -236,9 +237,9 @@ Muchas-Muchas (N:N) | Las entidades de ambas relaciones pueden asociarse con var
 
 ## Diagrama ER
 
-> Un diagrama Entidad-Relación es como un mapa y nos ayuda a entender cuáles son las entidades con las que vamos a trabajar, cuáles son sus relaciones y qué papel van a jugar en las aplicaciones de la base de datos. <br>
+Un diagrama Entidad-Relación es como un mapa y nos ayuda a entender cuáles son las entidades con las que vamos a trabajar, cuáles son sus relaciones y qué papel van a jugar en las aplicaciones de la base de datos. <br>
 
-> *Nota:Una página muy util para elaborar estos diagramas es [DIAGRAMS](https://app.diagrams.net)*
+*Nota:Una página muy util para elaborar estos diagramas es [DIAGRAMS](https://app.diagrams.net)*
 
 <br>
 <div align="center"> 
@@ -246,7 +247,7 @@ Muchas-Muchas (N:N) | Las entidades de ambas relaciones pueden asociarse con var
   <h5> Diagrama E:R de Platziblog </h5>
 </div>
 
-> Debemos recordar que existen varios métodos para representar una misma relación. A estos diversos metodos se les conoce como: **Diagramming Convention Techniques**
+ Debemos recordar que existen varios métodos para representar una misma relación. A estos diversos metodos se les conoce como: **Diagramming Convention Techniques**
 
 <br>
 <div align="center"> 
@@ -276,7 +277,7 @@ Smallint | Subtipo de integer, nos para declarar números muy pequeños (99 o me
 Decimal (n, s) y Numeric (n, s) | Tienen dos parámetros (n y s, en este ejemplo). La primera entrada es para números enteros, y la segunda entrada es para números decimales. Nos sirve para hacer operaciones mas precisas.
 
 #### Datos de fecha y hora
-> Esta clase de tipos de datos es muy peculiar ya que nos ayuda internamente a tener una bitácora de nuestra base de datos.
+ Esta clase de tipos de datos es muy peculiar ya que nos ayuda internamente a tener una bitácora de nuestra base de datos.
 
 Datos de fecha y hora | Descripción
 ------------- | -------------
@@ -298,7 +299,7 @@ Booleano | Este solo puede tener dos valores, funciona como un tipo de dato bina
 </div>
 
 #### Los constraints
-> Por su lado los contraints o restricciones son los tipos de reglas que vas a permitir que tenga tu base de datos. Y son:
+ Por su lado los contraints o restricciones son los tipos de reglas que vas a permitir que tenga tu base de datos. Y son:
 
 Constraints | Descripción
 ------------- | -------------
@@ -318,7 +319,7 @@ Index | Se crea por columna, su función es hacer búsquedas con mayor rapidez. 
 
 ### La Normalización
 
-> El proceso de normalización es un estándar que consiste, básicamente, en un proceso de conversión de las relaciones entre las entidades. Es útil para separar la información, minimizar la redundancia de los datos, para que la actualización de los datos sea más sencilla y la integridad de los datos se conserve. Esto obedece a las 12 reglas de Codd y nos permiten separar componentes en la base de datos. Identificamos para ello 4 reglas denominadas **Formas normales**.
+ El proceso de normalización es un estándar que consiste, básicamente, en un proceso de conversión de las relaciones entre las entidades. Es útil para separar la información, minimizar la redundancia de los datos, para que la actualización de los datos sea más sencilla y la integridad de los datos se conserve. Esto obedece a las 12 reglas de Codd y nos permiten separar componentes en la base de datos. Identificamos para ello 4 reglas denominadas **Formas normales**.
 
 Formas normales | Descripción
 ------------- | -------------
@@ -345,15 +346,15 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
   <h5> 4FN </h5>
 </div>
 
-> Al normalizar evitanmos: <br>
-> -La redundancia de los datos: repetición de datos en un sistema. <br>
-> -Anomalías de actualización: Inconsistencias de los datos como resultado de datos redundantes y actualizaciones parciales. <br>
-> -Anomalías de borrado: Pérdidas no intencionadas de datos debido a que se han borrado otros datos. <br>
-> -Anomalías de inserción: Imposibilidad de adicionar datos en la base de datos debido a la ausencia de otros datos.
+ Al normalizar evitanmos: <br>
+ -La redundancia de los datos: repetición de datos en un sistema. <br>
+ -Anomalías de actualización: Inconsistencias de los datos como resultado de datos redundantes y actualizaciones parciales. <br>
+ -Anomalías de borrado: Pérdidas no intencionadas de datos debido a que se han borrado otros datos. <br>
+ -Anomalías de inserción: Imposibilidad de adicionar datos en la base de datos debido a la ausencia de otros datos.
 
 #### Normalizacion de Platziblog
 
-> Ahora aplicaremos la normalización a nuestro proyecto de Platziblog
+ Ahora aplicaremos la normalización a nuestro proyecto de Platziblog
 
 <br>
 <div align="center"> 
@@ -361,14 +362,14 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
   <h5> Diagrama Platziblog </h5>
 </div>
 
-> *NOTA 01: Al normalizar aunque parezca que la información se multiplicó, en realidad la descompusimos de manera que a un sistema le sea fácil de reconocer y mantener la consistencia de los datos.* <br>
-> *NOTA 02: Algunos autores precisan una 5FN que hace referencia a que después de realizar esta normalización a través de uniones (JOIN) permita regresar a la data original de la cual partió.*
+ *NOTA 01: Al normalizar aunque parezca que la información se multiplicó, en realidad la descompusimos de manera que a un sistema le sea fácil de reconocer y mantener la consistencia de los datos.* <br>
+ *NOTA 02: Algunos autores precisan una 5FN que hace referencia a que después de realizar esta normalización a través de uniones (JOIN) permita regresar a la data original de la cual partió.*
 
 ## RDBMS (MySQL)
 
 ### RDB ¿Qué?
 
-> RDBMS significa Relational Database Management System o sistema manejador de bases de datos relacionales. Es un programa que se encarga de seguir las reglas de Codd y se puede utilizar de manera programática. Actúa como sistema que permite crear, editar y administrar una base de datos relacional. En su gran mayoría usan el Lenguaje de Consultas Estructuradas (SQL).
+ RDBMS significa Relational Database Management System o sistema manejador de bases de datos relacionales. Es un programa que se encarga de seguir las reglas de Codd y se puede utilizar de manera programática. Actúa como sistema que permite crear, editar y administrar una base de datos relacional. En su gran mayoría usan el Lenguaje de Consultas Estructuradas (SQL).
 
 <br>
 <div align="center"> 
@@ -378,9 +379,9 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
 
 ### Clientes gráficos
 
-> Los clientes graficos son herramientas gráficas que nos ayudan a representar y ver el funcionamiento de una base de datos internamente.Como parte de las herramientas que vienen en Mysql viene ya instalado, un cliente grafico llamado MySQL Workbench, una aplicación creada por los propios desarrolladores de MySQL. Se trata de una herramienta visual muy completa que, además, es multiplataforma y se puede instalar en sistemas Windows, Linux y Mac. <br>
+ Los clientes graficos son herramientas gráficas que nos ayudan a representar y ver el funcionamiento de una base de datos internamente.Como parte de las herramientas que vienen en Mysql viene ya instalado, un cliente grafico llamado MySQL Workbench, una aplicación creada por los propios desarrolladores de MySQL. Se trata de una herramienta visual muy completa que, además, es multiplataforma y se puede instalar en sistemas Windows, Linux y Mac. <br>
 
-> Sin embargo eisten otras opciones como: dbeaver, HeidiSql, Navicat, Wamp, Xamp, DataGrip, Sequel Pro, PhpMyAdmin, etc.
+ Sin embargo eisten otras opciones como: dbeaver, HeidiSql, Navicat, Wamp, Xamp, DataGrip, Sequel Pro, PhpMyAdmin, etc.
 
 <br>
 <div align="center"> 
@@ -396,7 +397,7 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
 
 ### Servicios administrados
 
->Hoy en día muchas empresas ya no tienen instalados en sus servidores los RDBMS sino que los contratan a otras personas. Estos servicios administrados cloud te permiten concentrarte en la base de datos y no en su administración y actualización. Algunos muy famosos son AWS(de Amazon), GCP (Google Cloud Platform) o Azure (Microsoft).
+Hoy en día muchas empresas ya no tienen instalados en sus servidores los RDBMS sino que los contratan a otras personas. Estos servicios administrados cloud te permiten concentrarte en la base de datos y no en su administración y actualización. Algunos muy famosos son AWS(de Amazon), GCP (Google Cloud Platform) o Azure (Microsoft).
 
 <br>
 <div align="center"> 
@@ -407,9 +408,8 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
 ## SQL hasta en la sopa
 
 ### Historia del SQL
->Debido a la necesidad de la época por realizar consultas de datos de una forma más organizada se crea SQL como una especie de lenguaje estándar para hacer este proceso en los distintos manejadores de datos. <br>
-
-> Asi suge SQL (Structured Query Language), el cual es un lenguaje de dominio específico utilizado en programación, diseñado para administrar, y recuperar información de sistemas de gestión de bases de datos relacionales. Su objetivo es hacer un solo lenguaje para consultar cualquier manejador de bases de datos volviéndose un gran estándar. SQL es un estándar aceptado por ANSI (Instituto Nacional Estadounidense de Estándares).
+Debido a la necesidad de la época por realizar consultas de datos de una forma más organizada se crea SQL como una especie de lenguaje estándar para hacer este proceso en los distintos manejadores de datos. <br>
+ Asi suge SQL (Structured Query Language), el cual es un lenguaje de dominio específico utilizado en programación, diseñado para administrar, y recuperar información de sistemas de gestión de bases de datos relacionales. Su objetivo es hacer un solo lenguaje para consultar cualquier manejador de bases de datos volviéndose un gran estándar. SQL es un estándar aceptado por ANSI (Instituto Nacional Estadounidense de Estándares).
 
 <br>
 <div align="center"> 
@@ -418,7 +418,7 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
 </div>
 
 
-> Ahora existe el NOSQL (Not Only Structured Query Language) que significa que no sólo se utiliza SQL en las bases de datos no relacionales. Pero siguen usando SQL como base pero no es exclusivo.
+ Ahora existe el NOSQL (Not Only Structured Query Language) que significa que no sólo se utiliza SQL en las bases de datos no relacionales. Pero siguen usando SQL como base pero no es exclusivo.
 
 <br>
 <div align="center"> 
@@ -426,11 +426,11 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
   <h5> SQL vs noSQL </h5>
 </div>
 
-> *NOTA1: Un **lenguaje de dominio específico** es como un lenguaje de programación pero dedicado a resolver un problema en particular. Por lo tanto SQL, al igual que HTML o CSS, no es un lenguaje de programación como tal, pero es un lenguaje que nos permite estructurar datos, asi como HTML es un lenguaje de marcado de texto y CSS un lenguaje para diseñar interfaces.* <br>
+ *NOTA1: Un **lenguaje de dominio específico** es como un lenguaje de programación pero dedicado a resolver un problema en particular. Por lo tanto SQL, al igual que HTML o CSS, no es un lenguaje de programación como tal, pero es un lenguaje que nos permite estructurar datos, asi como HTML es un lenguaje de marcado de texto y CSS un lenguaje para diseñar interfaces.* <br>
 
-> *NOTA2: **PL/SQL** es un lenguaje de programación de la base de datos de Oracle, el nombre viene de Procedural Language/Structured Query Language y **T-SQL** es un lenguaje de programación de la base de datos de Microsoft SQL Server y el nombre viene de TRANSACT-SQL*
+ *NOTA2: **PL/SQL** es un lenguaje de programación de la base de datos de Oracle, el nombre viene de Procedural Language/Structured Query Language y **T-SQL** es un lenguaje de programación de la base de datos de Microsoft SQL Server y el nombre viene de TRANSACT-SQL*
 
-> Es improtante comprender que dentro del SQL como lenguaje de domio específico podemos hallar grandes sublenguajes:
+ Es improtante comprender que dentro del SQL como lenguaje de domio específico podemos hallar grandes sublenguajes:
 
 <br>
 <div align="center"> 
@@ -438,7 +438,7 @@ Cuarta forma normal (4FN) | **Cumple 1FN, 2FN, 3FN y los campos multivaluados se
   <h5> Sublenguajes </h5>
 </div>
 
-> **1. DDL (Data Definition Language)**: Permite crear y modificar la estructura de una base de datos. Posee los siguientes comandos:
+ **1. DDL (Data Definition Language)**: Permite crear y modificar la estructura de una base de datos. Posee los siguientes comandos:
 
 Comandos | Descripción
 ------------- | -------------
@@ -449,18 +449,18 @@ TRUNCATE | Empleado para eliminar todos los registros de una tabla.
 COMMENT | Utilizado para agregar comentarios al diccionario de datos.
 RENAME | Tal como su nombre lo indica es utilizado para renombrar objetos.
 
-> Iniciaremos creando una tabla
+ Iniciaremos creando una tabla
 
     CREATE SCHEMA `platziblog` ;
 
-> Podemos identificar 3 objetos que manipularemos con el lenguaje DDL: <br>
-> -Database o bases de datos. <br>
-> -Table o tablas. Son la traducción a SQL de las entidades. <br>
-> -View o vistas: Se ofrece la proyección de los datos de la base de datos de forma entendible.
+ Podemos identificar 3 objetos que manipularemos con el lenguaje DDL: <br>
+ -Database o bases de datos. <br>
+ -Table o tablas. Son la traducción a SQL de las entidades. <br>
+ -View o vistas: Se ofrece la proyección de los datos de la base de datos de forma entendible.
 
 ### Create view y DDL alter
 
-> Primero vamos a crear la tabla people con sus atributos
+ Primero vamos a crear la tabla people con sus atributos
 
     CREATE TABLE `platziblog`.`people` (
         `person_id` INT NOT NULL AUTO_INCREMENT,
@@ -476,7 +476,7 @@ RENAME | Tal como su nombre lo indica es utilizado para renombrar objetos.
   <h5> Atributos de tabla people </h5>
 </div>
 
-> Ahora vamos a agregarle datos
+ Ahora vamos a agregarle datos
 
     INSERT INTO `platziblog`.`people` (`person_id`, `last_name`, `first_name`, `address`, `city`) 
     VALUES ('1', 'Vásquez', 'Israel', 'Calle Famosa Num 1', 'México'),
@@ -489,13 +489,13 @@ RENAME | Tal como su nombre lo indica es utilizado para renombrar objetos.
   <h5> Agregando datos en tabla people </h5>
 </div>
 
-> Ahora crearemos una vista de dicha tabla
+ Ahora crearemos una vista de dicha tabla
 
     USE `platziblog`;
     CREATE  OR REPLACE VIEW `new_view` AS
     SELECT * FROM platziblog.people;
 
-> Ahora vamos modificar sus datos, crearemos una columna con ALTER 
+ Ahora vamos modificar sus datos, crearemos una columna con ALTER 
 
     ALTER TABLE `Platziblog`.`people` 
     ADD COLUMN `date_of_birth` DATETIME NULL AFTER `city`;
@@ -505,14 +505,14 @@ RENAME | Tal como su nombre lo indica es utilizado para renombrar objetos.
 
 ### DDL drop
 
-> Está puede ser la sentencia ¡más peligrosa. Sobre todo cuando somos principiantes. Básicamente borra o desaparece de nuestra base de datos algún elemento. Podemos borrar desde una tabla hasta toda la base de datos completa:
+ Está puede ser la sentencia ¡más peligrosa. Sobre todo cuando somos principiantes. Básicamente borra o desaparece de nuestra base de datos algún elemento. Podemos borrar desde una tabla hasta toda la base de datos completa:
 
     DROP TABLE `platziblog`.`people`;
     DROP DATABASE `platziblog`;
 
 ### DML
 
-> **2. DML (Data Manipulation Language)**: A diferencia de DDL que esta orientado a la estrucutra de la BD, el DML esta orientado al contenido de la BD. Permite recuperar, almacenar, modificar, eliminar, insertar y actualizar datos de una base de datos. Posee los siguientes comandos:
+ **2. DML (Data Manipulation Language)**: A diferencia de DDL que esta orientado a la estrucutra de la BD, el DML esta orientado al contenido de la BD. Permite recuperar, almacenar, modificar, eliminar, insertar y actualizar datos de una base de datos. Posee los siguientes comandos:
 
 Comandos | Descripción
 ------------- | -------------
@@ -521,20 +521,20 @@ INSERT | Utilizado para cargar de datos en la base de datos en una única operac
 UPDATE | Utilizado para modificar los valores de los campos y registros especificados
 DELETE | Utilizado para eliminar registros de una tabla de una base de datos.
 
-> Primero intentaremos insertar nuevos datos
+ Primero intentaremos insertar nuevos datos
 
     INSERT INTO `platziblog`.`people` (`last_name`, `first_name`, `address`) 
     VALUES ('Hernández', 'Laura', 'Calle 12');
 
-> Ahora cambiaremos algunos datos   
+ Ahora cambiaremos algunos datos   
     
     UPDATE `platziblog`.`people` SET `last_name` = 'Chavez', `city` = 'Mérida' WHERE (`person_id` = '1');
 
-> Ahora borraremos contenido de la tabla con DELETE
+ Ahora borraremos contenido de la tabla con DELETE
 
     DELETE FROM `platziblog`.`people` WHERE (`person_id` = '1');
 
-> Finalmente realizaremos una consulta a nuestra base de datos
+ Finalmente realizaremos una consulta a nuestra base de datos
 
     SELECT first_name, last_name FROM people;
     
@@ -546,28 +546,28 @@ DELETE | Utilizado para eliminar registros de una tabla de una base de datos.
 
 ### DCL Y TCL
     
-> **3. DCL (Data Control Language)**: Permite crear roles, permisos e integridad referencial, así como el control al acceso a la base de datos.
+ **3. DCL (Data Control Language)**: Permite crear roles, permisos e integridad referencial, así como el control al acceso a la base de datos.
 
 Comandos | Descripción
 ------------- | -------------
 GRANT | Usado para otorgar privilegios de acceso de usuario a la base de datos.
 REVOKE | Utilizado para retirar privilegios de acceso otorgados con el comando GRANT.
 
-> **4. TCL (Transactional Control Language)**: Permite administrar diferentes transacciones que ocurren dentro de una base de datos.
+ **4. TCL (Transactional Control Language)**: Permite administrar diferentes transacciones que ocurren dentro de una base de datos.
 
 Comandos | Descripción
 ------------- | -------------
 COMMIT | Empleado para guardar el trabajo hecho.
 ROLLBACK | Utilizado para deshacer la modificación que hice desde el último COMMIT.
 
-### ¿Que es standar en SQL?
+### ¿Que es estandar en SQL?
 
-> La utilidad más grande de SQL fue unificar la forma en la que pensamos y hacemos preguntas a un repositorio de datos. Ahora que nacen nuevas bases de datos igualmente siguen tomando elementos de SQL. Podemos afirmar que:
-> -SQL unificó la manera en que sea hacen preguntas a un repositorio de datos.
-> -Se convirtió en un standard util a la hora de usar bases de datos.
-> -Existen otros manejadores de datos como Oracle o PostgreSQL. Sin embargo, si escribimos en lenguaje SQL todos los manejadores funcionaran de manera similar.
+ La utilidad más grande de SQL fue unificar la forma en la que pensamos y hacemos preguntas a un repositorio de datos. Ahora que nacen nuevas bases de datos igualmente siguen tomando elementos de SQL. Podemos afirmar que:
+ -SQL unificó la manera en que sea hacen preguntas a un repositorio de datos.
+ -Se convirtió en un standard util a la hora de usar bases de datos.
+ -Existen otros manejadores de datos como Oracle o PostgreSQL. Sin embargo, si escribimos en lenguaje SQL todos los manejadores funcionaran de manera similar.
 
-> Ejemplo: DDL y DML son exactamente las mismas para distintos manejadores de base de datos que tengan el standard SQL, existes algunos cambios sutiles que mas son funcionamiento interno del manejador de DB, por este motivo se puede ejecutar estos scripts por ejemplo en POsgresSQL y en MySQL
+ Ejemplo: DDL y DML son exactamente las mismas para distintos manejadores de base de datos que tengan el standard SQL, existes algunos cambios sutiles que mas son funcionamiento interno del manejador de DB, por este motivo se puede ejecutar estos scripts por ejemplo en POsgresSQL y en MySQL
 
     create TABLE people (
 	person_id int,
@@ -587,7 +587,7 @@ ROLLBACK | Utilizado para deshacer la modificación que hice desde el último CO
 
 #### Tablas independientes
 
-> Ahora empezaremos a plasmar la BD de Platziblog segun nuestro Diagrama Físico. Una buena práctica es comenzar creando las entidades que no tienen una llave foránea. A estas tablas se les denomina, tablas independientes. Generalmente en los nombres de bases de datos se evita usar eñes o acentos para evitar problemas en los manejadores de las bases de datos.
+ Ahora empezaremos a plasmar la BD de Platziblog segun nuestro Diagrama Físico. Una buena práctica es comenzar creando las entidades que no tienen una llave foránea. A estas tablas se les denomina, tablas independientes. Generalmente en los nombres de bases de datos se evita usar eñes o acentos para evitar problemas en los manejadores de las bases de datos.
 
     /*creacion de base de datos PlatziBlog*/
     create database PlatziBlog default character set utf8 ;
@@ -629,7 +629,7 @@ ROLLBACK | Utilizado para deshacer la modificación que hice desde el último CO
 
 #### Tablas dependientes
 
-> Ahora es momento de crear las entidades que si tienen una llave foránea. A estas tablas se les denomina, tablas dependientes.
+ Ahora es momento de crear las entidades que si tienen una llave foránea. A estas tablas se les denomina, tablas dependientes.
 
     ALTER TABLE `PlatziBlog`.`posts` 
     ADD INDEX `usuario_posts_fk_idx` (`usuario_id` ASC) VISIBLE;
@@ -680,9 +680,9 @@ ROLLBACK | Utilizado para deshacer la modificación que hice desde el último CO
   <h5> Añadiendo Foreign key </h5>
 </div>
 
-> Las Foreing Key options son las siguientes: <br>
-> -On update: Significa qué pasará con las relaciones cuando una de estas sea modificada en sus campos relacionados. <br>
-> -On delete: Significa qué pasará con las relaciones cuando una de estas sea eliminada en sus campos relacionados.
+ Las Foreing Key options son las siguientes: <br>
+ -On update: Significa qué pasará con las relaciones cuando una de estas sea modificada en sus campos relacionados. <br>
+ -On delete: Significa qué pasará con las relaciones cuando una de estas sea eliminada en sus campos relacionados.
 
 <br>
 <div align="center"> 
@@ -699,7 +699,7 @@ No action | Si un usuario es eliminado/modificado, no se hará nada. Solo se rom
   
 #### Tablas transitivas
 
-> Las tablas transitivas sirven como puente para unir dos tablas. No tienen contenido semántico. Reverse Engineer nos reproduce el esquema del cual nos basamos para crear nuestras tablas. Es útil cuando llegas a un nuevo trabajo y quieres entender cuál fue la mentalidad que tuvieron al momento de crear las bases de datos.
+ Las tablas transitivas sirven como puente para unir dos tablas. No tienen contenido semántico. Reverse Engineer nos reproduce el esquema del cual nos basamos para crear nuestras tablas. Es útil cuando llegas a un nuevo trabajo y quieres entender cuál fue la mentalidad que tuvieron al momento de crear las bases de datos.
 
     CREATE TABLE posts_etiquetas
     (
@@ -731,7 +731,7 @@ No action | Si un usuario es eliminado/modificado, no se hará nada. Solo se rom
 
 ## Consultas a una base de datos
 
-> Las consultas o queries a una base de datos son una parte fundamental ya que esto podría salvar un negocio o empresa. Alrededor de las consultas a las bases de datos se han creado varias especialidades como ETL o transformación de datos, business intelligence e incluso machine learning.
+ Las consultas o queries a una base de datos son una parte fundamental ya que esto podría salvar un negocio o empresa. Alrededor de las consultas a las bases de datos se han creado varias especialidades como ETL o transformación de datos, business intelligence e incluso machine learning.
 
 Especialidad | Descripción
 ------------- | -------------
@@ -742,14 +742,14 @@ Machine learning | procesar datos para encontrar patrones o soluciones nuevas pa
 
 ### ¿Por qué las consultas son tan importantes?
 
-> -Las empresas tienen gran necesidad de informacion correcta y oportuna. <br>
-> -Son una parte fundamental al tratar con bases de datos. <br>
-> -Se puede aprender a hacer consultas, mejorando nuestra habilidad en ello a lo largo del tiempo.
+ -Las empresas tienen gran necesidad de informacion correcta y oportuna. <br>
+ -Son una parte fundamental al tratar con bases de datos. <br>
+ -Se puede aprender a hacer consultas, mejorando nuestra habilidad en ello a lo largo del tiempo.
 
 ### Estructura básica de un Query
 
-> Los queries son la forma en la que estructuramos las preguntas que se harán a la base de datos. Transforma preguntas en sintaxis. Pero al mismo tiempo los query tiene básicamente 2 partes: SELECT y FROM y puede aparecer una tercera como WHERE. <br>
-> *NOTA:La estrellita o asterisco (*) quiere decir que vamos a seleccionar todo sin filtrar campos.* <br>
+ Los queries son la forma en la que estructuramos las preguntas que se harán a la base de datos. Transforma preguntas en sintaxis. Pero al mismo tiempo los query tiene básicamente 2 partes: SELECT y FROM y puede aparecer una tercera como WHERE. <br>
+ *NOTA:La estrellita o asterisco (*) quiere decir que vamos a seleccionar todo sin filtrar campos.* <br>
 
 Sentencia | Descripción
 ------------- | -------------
@@ -766,238 +766,16 @@ HAVING | otra manera de filtrar los datos.
   <h5> Ejemplo de estructura de un Query </h5>
 </div>
 
-> Para practicar primero generaremos la base de datos de platziblog.
+ Para practicar primero generaremos la base de datos de PlatziBlog:
 
-	CREATE SCHEMA `platziblog` default character SET utf8;
+**Ver [aquí](./../Desarrollo/PlatziBlog.sql)**
 
-	CREATE TABLE `platziblog`.`categorias`(
-		`id` INT NOT NULL auto_increment,
-	    `nombre_categoria` varchar(30) NOT NULL,
-	primary key (`id`));
-
-	CREATE TABLE `platziblog`.`etiquetas`(
-		`id`INT NOT NULL auto_increment,
-	    `nombre_etiqueta`varchar(30) NOT NULL,
-	primary key (`id`));
-
-	CREATE TABLE `platziblog`.`usuarios`(
-		`id` INT NOT NULL auto_increment,
-	    `login` varchar(30) NOT NULL,
-	    `password` varchar(32) NOT NULL,
-	    `nickname` varchar(40) NOT NULL,
-	    `email` varchar(40) NOT NULL,
-	primary key (`id`),
-	UNIQUE INDEX (`email` ASC));
-
-	CREATE TABLE `platziblog`.`posts`(
-		`id` INT NOT NULL auto_increment,
-	    `titulo` varchar(130) NOT NULL,
-	    `fecha_publicacion` timestamp null,
-	    `contenido` TEXT NOT NULL,
-	    `estatus` char(8) NULL default 'activo',
-	    `usuario_id` INT NULL,
-		`categoria_id` INT NULL,
-	primary key (`id`));
-
-	CREATE TABLE `platziblog`.`comentarios`(
-		`id` INT NOT NULL auto_increment,
-	    `cuerpo_comentario` TEXT NOT NULL,
-	    `usuario_id` INT NOT NULL,
-	    `post_id` INT NOT NULL,
-	primary key (`id`));
-
-	ALTER TABLE `platziblog`.`posts`
-	ADD INDEX `posts_usuarios_idx` (`usuario_id` ASC);
-	;
-	ALTER TABLE `platziblog`.`posts` 
-	ADD constraint `posts_usuarios`
-		foreign key (`usuario_id`)
-		references `platziblog`.`usuarios` (`id`)
-	    ON DELETE NO ACTION
-	    ON UPDATE cascade;
-
-	ALTER TABLE `platziblog`.`posts`
-	ADD INDEX `posts_categorias_idx` (`categoria_id` ASC);
-	;
-	ALTER TABLE `platziblog`.`posts` 
-	ADD constraint `posts_categorias`
-		foreign key (`categoria_id`)
-		references `platziblog`.`categorias` (`id`)
-	    ON DELETE NO ACTION
-	    ON UPDATE no action;
-
-	ALTER TABLE `platziblog`.`comentarios`
-	ADD INDEX `comentarios_usuario_idx` (`usuario_id` ASC);
-	;
-	ALTER TABLE `platziblog`.`comentarios` 
-	ADD constraint `comentarios_usuario`
-		foreign key (`usuario_id`)
-		references `platziblog`.`usuarios` (`id`)
-	    ON DELETE NO ACTION
-	    ON UPDATE no action;
-
-	ALTER TABLE `platziblog`.`comentarios`
-	ADD INDEX `comentarios_post_idx` (`post_id` ASC);
-	;
-	ALTER TABLE `platziblog`.`comentarios` 
-	ADD constraint `comentarios_post`
-		foreign key (`post_id`)
-		references `platziblog`.`posts` (`id`)
-	    ON DELETE NO ACTION
-	    ON UPDATE no action;
-
-	CREATE TABLE `platziblog`.`posts_etiquetas`(
-		`id` INT NOT NULL auto_increment,
-	    `post_id` INT NOT NULL,
-		`etiqueta_id` INT NOT NULL,
-	primary key (`id`));
-
-	ALTER TABLE `platziblog`.`posts_etiquetas`
-	ADD INDEX `postsetiquetas_post_idx` (`post_id` ASC);
-	;
-	ALTER TABLE `platziblog`.`posts_etiquetas` 
-	ADD constraint `postsetiquetas_post`
-		foreign key (`post_id`)
-		references `platziblog`.`posts` (`id`)
-	    ON DELETE NO ACTION
-	    ON UPDATE no action;
-
-	ALTER TABLE `platziblog`.`posts_etiquetas`
-	ADD INDEX `postsetiquetas_etiquetas_idx` (`etiqueta_id` ASC);
-	;
-	ALTER TABLE `platziblog`.`posts_etiquetas` 
-	ADD constraint `postsetiquetas_etiquetas`
-		foreign key (`etiqueta_id`)
-		references `platziblog`.`etiquetas` (`id`)
-	    ON DELETE NO ACTION
-	    ON UPDATE no action;
-
-	USE platziblog;
-
-	-- Datos de prueba
-
-	-- Usuarios
-	INSERT INTO `usuarios` (`id`,`login`,`password`,`nickname`,`email`) VALUES (1,'israel','jc8209*(^GCHN_(hcLA','Israel','israel@platziblog.com');
-	INSERT INTO `usuarios` (`id`,`login`,`password`,`nickname`,`email`) VALUES (2,'monica','(*&^LKJDHC_(*#YDLKJHODG','Moni','monica@platziblog.com');
-	INSERT INTO `usuarios` (`id`,`login`,`password`,`nickname`,`email`) VALUES (3,'laura','LKDJ)_*(-c.M:\"[pOwHDˆåßƒ∂','Lau','laura@platziblog.com');
-	INSERT INTO `usuarios` (`id`,`login`,`password`,`nickname`,`email`) VALUES (4,'edgar','LLiy)CX*Y:M<A<SC_(*N>O','Ed','edgar@platziblog.com');
-	INSERT INTO `usuarios` (`id`,`login`,`password`,`nickname`,`email`) VALUES (5,'perezoso','&N_*JS)_Y)*(&TGOKS','Oso Pérez','perezoso@platziblog.com');
-
-	-- Categorías
-	INSERT INTO `categorias` (`id`,`nombre_categoria`) VALUES (1,'Ciencia');
-	INSERT INTO `categorias` (`id`,`nombre_categoria`) VALUES (2,'Tecnología');
-	INSERT INTO `categorias` (`id`,`nombre_categoria`) VALUES (3,'Deportes');
-	INSERT INTO `categorias` (`id`,`nombre_categoria`) VALUES (4,'Espectáculos');
-	INSERT INTO `categorias` (`id`,`nombre_categoria`) VALUES (5,'Economía');
-
-	-- Etiquetas
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (1,'Robótica');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (2,'Computación');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (3,'Teléfonos Móviles');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (4,'Automovilismo');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (5,'Campeonatos');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (6,'Equipos');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (7,'Bolsa de valores');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (8,'Inversiones');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (9,'Brokers');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (10,'Celebridades');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (11,'Eventos');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (12,'Moda');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (13,'Avances');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (14,'Nobel');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (15,'Matemáticas');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (16,'Química');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (17,'Física');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (18,'Largo plazo');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (19,'Bienes Raíces');
-	INSERT INTO `etiquetas` (`id`,`nombre_etiqueta`) VALUES (20,'Estilo');
-
-	-- Posts
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (43,'Se presenta el nuevo teléfono móvil en evento','2030-04-05 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',1,2);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (44,'Tenemos un nuevo auto inteligente','2025-05-04 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',2,2);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (45,'Ganador del premio Nobel por trabajo en genética','2023-12-22 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',3,1);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (46,'Los mejores vestidos en la alfombra roja','2021-12-22 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',4,4);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (47,'Los paparatzi captan escándalo en cámara','2025-01-09 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','inactivo',4,4);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (48,'Se mejora la conducción autónoma de vehículos','2022-05-23 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',1,2);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (49,'Se descubre nueva partícula del modelo estandar','2023-01-10 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',2,1);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (50,'Químicos descubren nanomaterial','2026-06-04 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',2,1);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (51,'La bolsa cae estrepitosamente','2024-04-03 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',2,5);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (52,'Bienes raices más baratos que nunca','2025-04-11 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','inactivo',2,5);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (53,'Se fortalece el peso frente al dolar','2021-10-09 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',1,5);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (54,'Tenemos ganador de la formula e','2022-11-11 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',1,3);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (55,'Ganan partido frente a visitantes','2023-12-10 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',2,3);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (56,'Equipo veterano da un gran espectaculo','2023-12-01 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','inactivo',2,3);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (57,'Escándalo con el boxeador del momento','2025-03-05 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',4,4);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (58,'Fuccia OS sacude al mundo','2028-10-10 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.','activo',1,2);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (59,'U.S. Robotics presenta hallazgo','2029-01-10 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.\n','activo',1,2);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (60,'Cierra campeonato mundial de football de manera impresionante','2023-04-10 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.\n','activo',2,3);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (61,'Escándalo en el mundo de la moda','2022-04-11 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.\n','activo',4,4);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (62,'Tenemos campeona del mundial de volleiball','2024-09-09 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.\n','inactivo',2,3);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (63,'Se descubre la unión entre astrofísica y fisica cuántica','2022-05-03 00:00:00','Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.\n','inactivo',3,1);
-	INSERT INTO `posts` (`id`,`titulo`,`fecha_publicacion`,`contenido`,`estatus`,`usuario_id`,`categoria_id`) VALUES (64,'El post que se quedó huérfano','2029-08-08 00:00:00','\'Phasellus laoreet eros nec vestibulum varius. Nunc id efficitur lacus, non imperdiet quam. Aliquam porta, tellus at porta semper, felis velit congue mauris, eu pharetra felis sem vitae tortor. Curabitur bibendum vehicula dolor, nec accumsan tortor ultrices ac. Vivamus nec tristique orci. Nullam fringilla eros magna, vitae imperdiet nisl mattis et. Ut quis malesuada felis. Proin at dictum eros, eget sodales libero. Sed egestas tristique nisi et tempor. Ut cursus sapien eu pellentesque posuere. Etiam eleifend varius cursus.\n\nNullam viverra quam porta orci efficitur imperdiet. Quisque magna erat, dignissim nec velit sit amet, hendrerit mollis mauris. Mauris sapien magna, consectetur et vulputate a, iaculis eget nisi. Nunc est diam, aliquam quis turpis ac, porta mattis neque. Quisque consequat dolor sit amet velit commodo sagittis. Donec commodo pulvinar odio, ut gravida velit pellentesque vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nMorbi vulputate ante quis elit pretium, ut blandit felis aliquet. Aenean a massa a leo tristique malesuada. Curabitur posuere, elit sed consectetur blandit, massa mauris tristique ante, in faucibus elit justo quis nisi. Ut viverra est et arcu egestas fringilla. Mauris condimentum, lorem id viverra placerat, libero lacus ultricies est, id volutpat metus sapien non justo. Nulla facilisis, sapien ut vehicula tristique, mauris lectus porta massa, sit amet malesuada dolor justo id lectus. Suspendisse sit amet tempor ligula. Nam sit amet nisl non magna lacinia finibus eget nec augue. Aliquam ornare cursus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ornare sem eget massa pharetra rhoncus. Donec tempor sapien at posuere porttitor. Morbi sodales efficitur felis eu scelerisque. Quisque ultrices nunc ut dignissim vehicula. Donec id imperdiet orci, sed porttitor turpis. Etiam volutpat elit sed justo lobortis, tincidunt imperdiet velit pretium. Ut convallis elit sapien, ac egestas ipsum finibus a. Morbi sed odio et dui tincidunt rhoncus tempor id turpis.\n\nProin fringilla consequat imperdiet. Ut accumsan velit ac augue sollicitudin porta. Phasellus finibus porttitor felis, a feugiat purus tempus vel. Etiam vitae vehicula ex. Praesent ut tellus tellus. Fusce felis nunc, congue ac leo in, elementum vulputate nisi. Duis diam nulla, consequat ac mauris quis, viverra gravida urna.\n\'','activo',NULL,NULL);
-
-	-- Posts-etiquetas
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (1,43,3);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (2,43,11);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (3,44,2);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (4,44,4);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (5,45,14);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (6,45,13);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (7,46,10);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (8,46,11);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (9,46,12);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (10,46,20);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (11,47,10);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (12,48,1);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (13,48,2);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (14,48,4);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (15,48,13);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (16,49,13);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (17,49,14);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (18,49,17);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (19,50,13);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (20,50,14);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (21,50,16);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (22,51,7);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (23,51,8);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (24,51,9);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (25,51,18);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (26,52,8);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (27,52,18);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (28,53,7);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (29,53,8);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (30,54,4);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (31,54,5);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (32,55,5);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (33,55,6);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (34,56,5);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (35,56,6);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (36,56,10);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (37,58,2);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (38,58,3);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (39,58,13);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (40,59,1);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (41,59,13);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (42,57,10);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (43,60,5);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (44,60,6);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (45,61,10);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (46,61,12);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (47,61,20);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (48,62,5);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (49,62,10);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (50,63,13);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (51,63,14);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (52,63,17);
-	INSERT INTO `posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (53,52,19);
-
-<br>
 <div align="center"> 
   <img src="src/45.png" width="550">
   <h5> Tablas de platziblog </h5>
 </div>
 
-> Practicaremos obtener datos con un primer query utilizando la sentencia SELECT
+ Practicaremos obtener datos con un primer query utilizando la sentencia SELECT
 
 	-- 1º Query
 	SELECT	*
@@ -1013,11 +791,11 @@ HAVING | otra manera de filtrar los datos.
 
 #### SELECT
 
-> Es la primera parte de la estructura que necesitamos para hacer preguntas a la base de datos. Se encarga de proyectar o mostrar los datos que le pedimos a la base de datos. Un SELECT debe tener como mínimo un FROM para poder funcionar. Cuando queremos traer todos los atributos de una tabla, podemos usar el asterisco para omitir colocar todos atributos al lado del SELECT uno por uno. <br>
+ Es la primera parte de la estructura que necesitamos para hacer preguntas a la base de datos. Se encarga de proyectar o mostrar los datos que le pedimos a la base de datos. Un SELECT debe tener como mínimo un FROM para poder funcionar. Cuando queremos traer todos los atributos de una tabla, podemos usar el asterisco para omitir colocar todos atributos al lado del SELECT uno por uno. <br>
 
-> SELECT se encarga de proyectar o mostrar datos. El nombre de las columnas o campos que estamos consultando puede ser cambiado utilizando AS después del nombre del campo y poniendo el nuevo que queremos tener. <br>
+ SELECT se encarga de proyectar o mostrar datos. El nombre de las columnas o campos que estamos consultando puede ser cambiado utilizando AS después del nombre del campo y poniendo el nuevo que queremos tener. <br>
 
-> Existe una función de SELECT para poder contar la cantidad de registros. Esa información (un número) será el resultado del query. <br>
+ Existe una función de SELECT para poder contar la cantidad de registros. Esa información (un número) será el resultado del query. <br>
 
 	-- Traer todos los campos de posts
 	SELECT	*
@@ -1041,8 +819,8 @@ HAVING | otra manera de filtrar los datos.
 
 #### FROM
 
-> FROM indica de dónde se deben traer los datos y puede ayudar a hacer sentencias y filtros complejos cuando se quieren unir tablas. La sentencia compañera que nos ayuda con este proceso es JOIN. <br>
-> *NOTA: Los diagramas de Venn son círculos que se tocan en algún punto para ver dónde está la intersección de conjuntos. Ayudan mucho para poder formular la sentencia JOIN de la manera adecuada dependiendo del query que se quiere hacer.*
+ FROM indica de dónde se deben traer los datos y puede ayudar a hacer sentencias y filtros complejos cuando se quieren unir tablas. La sentencia compañera que nos ayuda con este proceso es JOIN. <br>
+*NOTA: Los diagramas de Venn son círculos que se tocan en algún punto para ver dónde está la intersección de conjuntos. Ayudan mucho para poder formular la sentencia JOIN de la manera adecuada dependiendo del query que se quiere hacer.*
 
 | JOIN | Descripción  | Tipo |
 | :------------ |:---------------:| -----:|
@@ -1114,7 +892,7 @@ HAVING | otra manera de filtrar los datos.
 	WHERE	posts.usuario_id IS NULL;
 
 #### WHERE
-> WHERE es la sentencia que nos ayuda a filtrar registros (filas de la tabla). Podemos filtrar por ejemplo, a partir de cierto numero de ID (con el operador de mayor o menor). <br>
+ WHERE es la sentencia que nos ayuda a filtrar registros (filas de la tabla). Podemos filtrar por ejemplo, a partir de cierto numero de ID (con el operador de mayor o menor). <br>
 
 	-- Traer los post donde id sea menor a 50
 	SELECT	*
@@ -1131,16 +909,16 @@ HAVING | otra manera de filtrar los datos.
 	FROM		posts
 	WHERE	fecha_publicacion > '2025-01-01';
 
-> -La propiedad LIKE nos ayuda a traer registros de los cuales conocemos sólo una parte de la información. <br>
-> *ejemplo: WHERE titulo LIKE ‘%escandalo%’ lo que hace es buscar aquellos titulos que tengan la palabra escandalo en alguna parte. Sin embargo, como los signos porcentuales indican que hay algo mas, si quitamos, por ejemplo, el del final (quedando ‘%escandalo’), estaremos buscando aquellos titulos que terminen con la palabra ‘escandalo’, ya que indicamos que despues de esta palabra no hay nada mas.* <br>
+ -La propiedad LIKE nos ayuda a traer registros de los cuales conocemos sólo una parte de la información. <br>
+ *ejemplo: WHERE titulo LIKE ‘%escandalo%’ lo que hace es buscar aquellos titulos que tengan la palabra escandalo en alguna parte. Sin embargo, como los signos porcentuales indican que hay algo mas, si quitamos, por ejemplo, el del final (quedando ‘%escandalo’), estaremos buscando aquellos titulos que terminen con la palabra ‘escandalo’, ya que indicamos que despues de esta palabra no hay nada mas.* <br>
 
 	-- Traer los posts donde en el título esté la palabra escandalo
 	SELECT	*
 	FROM		posts
 	WHERE	titulo LIKE '%escandalo%';
 
-> -La propiedad BETWEEN nos sirve para arrojar registros que estén en el medio de dos. Por ejemplo los registros con id entre 20 y 30. <br>
-> *ejemplo: WHERE fechaDePublicacion BETWEEN ‘2019-01-01’ AND ‘2019-01-10’ filtrara las publicaciones con fecha de publicacion entre el 1 de enero de 2019 y 10 de enero de 2019. Puede utilizarse tambien con valores numericos (y por lo tanto, por ejemplo, con los IDs).* <BR>
+ -La propiedad BETWEEN nos sirve para arrojar registros que estén en el medio de dos. Por ejemplo los registros con id entre 20 y 30. <br>
+ *ejemplo: WHERE fechaDePublicacion BETWEEN ‘2019-01-01’ AND ‘2019-01-10’ filtrara las publicaciones con fecha de publicacion entre el 1 de enero de 2019 y 10 de enero de 2019. Puede utilizarse tambien con valores numericos (y por lo tanto, por ejemplo, con los IDs).* <BR>
 
 	-- Traer los posts donde fecha de publicación este entre 2023-01-01 y 2025-12-31
 	SELECT	*
@@ -1157,11 +935,11 @@ HAVING | otra manera de filtrar los datos.
 	FROM		posts
 	WHERE	MONTH(fecha_publicacion) = '04';
 
-> *NOTA: Cabe mencionar que los operadores LIKE y BETWEEN AND, pueden ser negados con NOT **(NOT LIKE ; NOT BETWEEEN – AND –)**. *
+ *NOTA: Cabe mencionar que los operadores LIKE y BETWEEN AND, pueden ser negados con NOT **(NOT LIKE ; NOT BETWEEEN – AND –)**. *
 
 #### Utilizando la sentencia WHERE nulo y no nulo
 
-> El valor nulo en una tabla generalmente es su valor por defecto cuando nadie le asignó algo diferente. La sintaxis para hacer búsquedas de datos nulos es IS NULL. La sintaxis para buscar datos que no son nulos es IS NOT NULL
+ El valor nulo en una tabla generalmente es su valor por defecto cuando nadie le asignó algo diferente. La sintaxis para hacer búsquedas de datos nulos es IS NULL. La sintaxis para buscar datos que no son nulos es IS NOT NULL
 
 	-- Traer los posts donde el usuario sean NOT NULL
 	SELECT	*
@@ -1183,7 +961,7 @@ HAVING | otra manera de filtrar los datos.
 
 #### GROUP BY
 
-> GROUP BY tiene que ver con agrupación. Indica a la base de datos qué criterios debe tener en cuenta para agrupar.
+ GROUP BY tiene que ver con agrupación. Indica a la base de datos qué criterios debe tener en cuenta para agrupar.
 
 	-- Agrupar los count por los status
 	SELECT	estatus, COUNT(*) AS post_number
@@ -1207,7 +985,7 @@ HAVING | otra manera de filtrar los datos.
 	
 #### ORDER BY y HAVING
 
-> La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo de los criterios que quieras usar. Puedes utilizar otras secuencias auxiliares como:
+ La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo de los criterios que quieras usar. Puedes utilizar otras secuencias auxiliares como:
 
 Secuencias Auiliares | Descripción
 ------------- | -------------
@@ -1216,7 +994,7 @@ DESC | sirve para ordenar de forma descendente.
 LIMIT | se usa para limitar la cantidad de resultados que arroja el query.
 HAVING | tiene una similitud muy grande con WHERE, sin embargo el uso de ellos depende del orden. Cuando se quiere seleccionar tuplas agrupadas únicamente se puede hacer con HAVING.
 
-> *NOTA: En SQL SERVER no funciona el LIMIT, en su lugar use el TOP*
+ *NOTA: En SQL SERVER no funciona el LIMIT, en su lugar use el TOP*
 
 	-- Posts ordenados por fecha de publicación de manera ascendente
 	SELECT	*
@@ -1266,14 +1044,14 @@ HAVING | tiene una similitud muy grande con WHERE, sin embargo el uso de ellos d
 
 ### El interminable agujero de conejo (Nested queries)
 
-> Los Nested queries significan que dentro de un query podemos hacer otro query. Esto sirve para hacer join de tablas, estando una en memoria. También teniendo un query como condicional del otro. Este proceso puede ser tan profundo como quieras, teniendo infinitos queries anidados.
+ Los Nested queries significan que dentro de un query podemos hacer otro query. Esto sirve para hacer join de tablas, estando una en memoria. También teniendo un query como condicional del otro. Este proceso puede ser tan profundo como quieras, teniendo infinitos queries anidados.
 
-> Se le conoce como un producto cartesiano ya que se multiplican todos los registros de una tabla con todos los del nuevo query. Esto provoca que el query sea difícil de procesar por lo pesado que puede resultar (El punto negativo de esto, es que puede volverse lento a la hora de ejecutar).
+ Se le conoce como un producto cartesiano ya que se multiplican todos los registros de una tabla con todos los del nuevo query. Esto provoca que el query sea difícil de procesar por lo pesado que puede resultar (El punto negativo de esto, es que puede volverse lento a la hora de ejecutar).
 
-> Recomendaciones:<br>
-> - Precaución pues su uso por volverse confuso en un momento determinado y poco escalable.<br>
-> - Procurar que exista una buena normalizacion de las tablas.<br>
-> - Los JOINS son la mejor opción para casos de SELECT.
+ Recomendaciones:<br>
+ - Precaución pues su uso por volverse confuso en un momento determinado y poco escalable.<br>
+ - Procurar que exista una buena normalizacion de las tablas.<br>
+ - Los JOINS son la mejor opción para casos de SELECT.
 
 	 -- Ejemplo de Nested Queries donde creamos primero una new_table_proyection y luego realizamos count 
 	SELECT new_table_projection.date, COUNT(*) AS posts_count
@@ -1340,9 +1118,9 @@ HAVING | Los filtros que quiero que mis datos agrupados tengan.
 	GROUP BY c.id
 	ORDER BY cant_posts DESC;
 
-> *NOTA1: GROUP_CONCAT toma el resultado del query y lo pone como campo separado por comas.* <br>
+ *NOTA1: GROUP_CONCAT toma el resultado del query y lo pone como campo separado por comas.* <br>
 
-> *NOTA2: Función CASE permite agregar un campo virtual con información generada a partir de condiciones múltiples. Mostrar el idioma, precio de todos los libros, así como agregar una columna de informe que indique si el libro es caro, módico o barato basado en el precio.*
+ *NOTA2: Función CASE permite agregar un campo virtual con información generada a partir de condiciones múltiples. Mostrar el idioma, precio de todos los libros, así como agregar una columna de informe que indique si el libro es caro, módico o barato basado en el precio.*
 
 ### Consultando PlatziBlog
 
@@ -1377,11 +1155,11 @@ HAVING | Los filtros que quiero que mis datos agrupados tengan.
 
 ## Introducción a la bases de datos NO relacionales
 
-> Las bases de datos NoSQL a veces llamado “no solo SQL”, están diseñadas específicamente para modelos de datos específicos y tienen esquemas flexibles para crear aplicaciones modernas. Es una amplia clase de sistemas de gestión de bases de datos que difieren del modelo clásico de SGBDR (Sistema de Gestión de Bases de Datos Relacionales) en aspectos importantes, siendo el más destacado que no usan SQL como lenguaje principal de consultas.
+ Las bases de datos NoSQL a veces llamado “no solo SQL”, están diseñadas específicamente para modelos de datos específicos y tienen esquemas flexibles para crear aplicaciones modernas. Es una amplia clase de sistemas de gestión de bases de datos que difieren del modelo clásico de SGBDR (Sistema de Gestión de Bases de Datos Relacionales) en aspectos importantes, siendo el más destacado que no usan SQL como lenguaje principal de consultas.
 
 ### ¿Qué son y cuáles son los tipos de bases de datos no relacionales?
 
-> Respecto a las bases de datos no relacionales, no existe un solo tipo aunque se engloben en una sola categoría.
+ Respecto a las bases de datos no relacionales, no existe un solo tipo aunque se engloben en una sola categoría.
 
 Tipos | Descripción
 ------------- | -------------
@@ -1391,13 +1169,13 @@ Basadas en grafos | Basadas en teoría de grafos, sirven para entidades que se e
 En memoria | Pueden ser de estructura variada, pero su ventaja radica en la velocidad, ya que al vivir en memoria la extracción de datos es casi inmediata. Son volátiles / si el servidor se reinicia se pierden los datos. Ejemplos: Memcached, Redis.
 Optimizadas para búsquedas | Pueden ser de diversas estructuras, su ventaja radica en que se pueden hacer queries y búsquedas complejas de manera sencilla. Ejemplos: BigQuery, Elasticsearch.
 
-> Cada tipo surge como respuesta a un determinado problema, y por ello sus aplicaciones son muy distintas. A pesar de ellos a todos se les engloba con el nombre de BD noSQL.
+ Cada tipo surge como respuesta a un determinado problema, y por ello sus aplicaciones son muy distintas. A pesar de ellos a todos se les engloba con el nombre de BD noSQL.
 
 ### Servicios administrados y jerarquía de datos
 
-> Firebase (Firestore) es un servicio de Google donde puedes tercerizar muchos elementos en la nube. Firebase es una plataforma muy utilizada para el desarrollo de aplicaciones web y aplicaciones móviles. Como usa un conjunto de herramientas multiplataforma es compatible con grandes plataformas, como IOS, Android, aplicaciones web, Unity y C++. Es muy recomendable para desarrollos. <br>
+ Firebase (Firestore) es un servicio de Google donde puedes tercerizar muchos elementos en la nube. Firebase es una plataforma muy utilizada para el desarrollo de aplicaciones web y aplicaciones móviles. Como usa un conjunto de herramientas multiplataforma es compatible con grandes plataformas, como IOS, Android, aplicaciones web, Unity y C++. Es muy recomendable para desarrollos. <br>
 
-> Firebase ofrece 2 servicios para bases de datos, los cuales son Realtime Database y Cloud Firestore.
+ Firebase ofrece 2 servicios para bases de datos, los cuales son Realtime Database y Cloud Firestore.
 La jerarquía de datos consta primeramente de la base de datos como tal, seguido ya no de tablas, sino de colecciones y finalmente los documentos como tal y que correspondería a una tupla en una base de datos basada en SQL.
 
 Jerarquía de datos | Descripción
@@ -1413,12 +1191,12 @@ Documento | Es la información que se quiere guardar. Se guarda en un formato mu
 
 ### Top level collection con Firebase
 
-> El modelo de bases de datos no relacionales es un poco más cercano al mundo real en su comportamiento. Las top level collections son las colecciones que se tienen de inmediato o entrada en el proyecto. Firebase es un servicio que tiene múltiples opciones y está pensado principalmente para aplicaciones móviles y web.
+ El modelo de bases de datos no relacionales es un poco más cercano al mundo real en su comportamiento. Las top level collections son las colecciones que se tienen de inmediato o entrada en el proyecto. Firebase es un servicio que tiene múltiples opciones y está pensado principalmente para aplicaciones móviles y web.
 
-> -1° paso, se entra a https://firebase.google.com/. *(Nota: Debes estar logeado con tu cuenta de Google.)* <br>
-> -2° se entra a “Comenzar, luego a “Añadir un proyecto”. Luego se le da un nombre al proyecto, luego le das a continuar. *(Nota: Debes aceptar los términos y condiciones.)* <br>
-> -3° Seguido a esto elijes la zona donde se van a almacenar los datos, preferiblemente que sea una zona cercana a ti, por lo que se vera reflejado en una menor latencia. <br>
-> -4° Finalmente aparecerá la interfaz gráfica de firebase. Nos dirigimos al entorno de desarrollo y seleccionamos la opción “crear base de datos”. *(Nota: Una colección no puede existir hasta que creas un documento.)* <br>
+ -1° paso, se entra a https://firebase.google.com/. *(Nota: Debes estar logeado con tu cuenta de Google.)* <br>
+ -2° se entra a “Comenzar, luego a “Añadir un proyecto”. Luego se le da un nombre al proyecto, luego le das a continuar. *(Nota: Debes aceptar los términos y condiciones.)* <br>
+ -3° Seguido a esto elijes la zona donde se van a almacenar los datos, preferiblemente que sea una zona cercana a ti, por lo que se vera reflejado en una menor latencia. <br>
+ -4° Finalmente aparecerá la interfaz gráfica de firebase. Nos dirigimos al entorno de desarrollo y seleccionamos la opción “crear base de datos”. *(Nota: Una colección no puede existir hasta que creas un documento.)* <br>
 
 <br>
 <div align="center"> 
@@ -1426,11 +1204,11 @@ Documento | Es la información que se quiere guardar. Se guarda en un formato mu
   <h5> Creación de Top level collection </h5>
 </div>
 
-> *Nota: una Top level collection hace referencia a las colecciones que estan a nivel de la ruta principal.*
+ *Nota: una Top level collection hace referencia a las colecciones que estan a nivel de la ruta principal.*
 
 ### Creando y borrando documentos en Firestore
 
-> Un ID en un documento, funciona como un N° de serie. Es mejor dejarlo por default y que GOOGLE asigne un ID único.
+ Un ID en un documento, funciona como un N° de serie. Es mejor dejarlo por default y que GOOGLE asigne un ID único.
 
 Tipos de datos en Firestore | Descripción
 ------------- | -------------
@@ -1446,9 +1224,9 @@ Reference | Permite referencia un documento (relaciona dos documentos, no import
 
 ### Colecciones vs subcolecciones
 
-> La particularidad de las top level collections es que existen en el primer nivel de manera intrínseca. Las subcolecciones ya no vivirán al inicio de la base de datos. Si tienes una entidad separada que vas a referenciar desde muchos lugares es recomendado usar un top level collection. Por el otro lado si se necesita hacer algo intrínseco al documento es aconsejable usar subcolecciones. Un top level collection se utilizaria para relaciones de tipo “agregacion”. Mientras que una sub collection se utilizaria para relaciones tipo “composicion”. <br>
+ La particularidad de las top level collections es que existen en el primer nivel de manera intrínseca. Las subcolecciones ya no vivirán al inicio de la base de datos. Si tienes una entidad separada que vas a referenciar desde muchos lugares es recomendado usar un top level collection. Por el otro lado si se necesita hacer algo intrínseco al documento es aconsejable usar subcolecciones. Un top level collection se utilizaria para relaciones de tipo “agregacion”. Mientras que una sub collection se utilizaria para relaciones tipo “composicion”. <br>
 
-> *-Ejemplo: Tenemos Estudiantes, Cursos y Notas. Los estudiantes tiene cursos y los cursos tiene estudiantes. Si se elimina un curso los estudiantes no deben ser eliminados. Lo mismo si se elimina un estudiante los cursos no deben ser elimiandos. Esto es una relacion de agregacion. Aqui se usaria top level collection para estudiantes y cursos. Los estudiantes tienen notas y las notas pertenecen a un estudiante. Si se elimina un estudiante, tiene sentido eliminar las notas. Esto es una relacion de composicion. Aqui se usarian las subcollections. El estudiante tendría una subcollection de notas.*
+ *-Ejemplo: Tenemos Estudiantes, Cursos y Notas. Los estudiantes tiene cursos y los cursos tiene estudiantes. Si se elimina un curso los estudiantes no deben ser eliminados. Lo mismo si se elimina un estudiante los cursos no deben ser elimiandos. Esto es una relacion de agregacion. Aqui se usaria top level collection para estudiantes y cursos. Los estudiantes tienen notas y las notas pertenecen a un estudiante. Si se elimina un estudiante, tiene sentido eliminar las notas. Esto es una relacion de composicion. Aqui se usarian las subcollections. El estudiante tendría una subcollection de notas.*
 
 <br>
 <div align="center"> 
@@ -1458,27 +1236,27 @@ Reference | Permite referencia un documento (relaciona dos documentos, no import
 
 ### Recreando Platziblog
 
-> Las bases de datos basadas en documentos, no están optimizadas para hacer “queries”, sino mantener el estado de la aplicación. Nota: No todas las bases de datos no relaciones no están optimizadas para hacer “queries”, hay algunas que sí, como “Big Query”.
+Las bases de datos basadas en documentos, no están optimizadas para hacer “queries”, sino mantener el estado de la aplicación. Nota: No todas las bases de datos no relaciones no están optimizadas para hacer “queries”, hay algunas que sí, como “Big Query”.
 
 ### Construyendo Platziblog en Firestore
 
-> -Construimos categorias "espectaculos","deportes" y "ciencia" como top level collection. <br>
-> -Creamos en top level la coleccion usuarios. <br>
-> -Creamos la top level posts con dos articulos. <br>
-> -Ahora hacemos la relacion del top level collection del usuario agregando un campo en un documento posts usando el campo reference agregando el usuario. <br>
-> -Agregamos las referencias para las categorias. <br>
-> -Finalmente agregamos las subcolecciones etiquetas a los posts en agregar coleccion. <br>
+ -Construimos categorias "espectaculos","deportes" y "ciencia" como top level collection. <br>
+ -Creamos en top level la coleccion usuarios. <br>
+ -Creamos la top level posts con dos articulos. <br>
+ -Ahora hacemos la relacion del top level collection del usuario agregando un campo en un documento posts usando el campo reference agregando el usuario. <br>
+ -Agregamos las referencias para las categorias. <br>
+ -Finalmente agregamos las subcolecciones etiquetas a los posts en agregar coleccion. <br>
 
-> *NOTA: Emplear colecciones de nivel cero para entidades fuertes, que mas adelante se empleen para realizar busquedas exhaustivas. Emplear subcolecciones para entidades débiles, que solo permitan plasmar información relacionada, pero que dicha data no sea una fuente de consulta primaria para nuestra aplicación.*
+ *NOTA: Emplear colecciones de nivel cero para entidades fuertes, que mas adelante se empleen para realizar busquedas exhaustivas. Emplear subcolecciones para entidades débiles, que solo permitan plasmar información relacionada, pero que dicha data no sea una fuente de consulta primaria para nuestra aplicación.*
 
 
-### Proyecto final: transformando tu proyecto en una db no relacional
+### Proyecto final: transformando tu proyecto a una **Base de Datos No Relacional**
 
-> Dentro de las bases de datos relacionales tenemos diferentes niveles de datos. En primer lugar tenemos las Bases de Datos o Esquemas como repositorios donde vivirán los datos que nos interesa guardar. Dentro del esquema existen las Tablas que provienen del concepto de entidades; y a su vez dentro de las tablas tenemos las tuplas o renglones.<br>
+ Dentro de las bases de datos relacionales tenemos diferentes niveles de datos. En primer lugar tenemos las Bases de Datos o Esquemas como repositorios donde vivirán los datos que nos interesa guardar. Dentro del esquema existen las Tablas que provienen del concepto de entidades; y a su vez dentro de las tablas tenemos las tuplas o renglones.<br>
 
-> Cuando trabajamos con bases de datos basadas en documentos como Firestore, aún existe la figura de la base de datos, sin embargo cambiaremos las tablas en favor de las colecciones y las tuplas en lugar de los documentos. <br>
+ Cuando trabajamos con bases de datos basadas en documentos como Firestore, aún existe la figura de la base de datos, sin embargo cambiaremos las tablas en favor de las colecciones y las tuplas en lugar de los documentos. <br>
 
-> Dentro de las Colecciones existen 2 grandes tipos. Las Top level collection o colecciones de nivel superior y las subcollections o subcolecciones. Estas últimas viven únicamente dentro de un documento padre. ¿Cómo saber cuál escoger? Para determinar si tu colección debe ser top level o subcolección no hay una regla escrita en piedra y más bien tiene que ver con el caso de uso en particular y con la experiencia que hayas ganado como desarrollador. Lo cierto es que no hay una sola forma de estructurar nuestra DB basada en documentos, y por tanto no existe una respuesta correcta, sin embargo a continuación te ofrezco un par de reglas guía que puedes utilizar para transformar tu proyecto que ya trabajaste en bases de datos relacionales en un proyecto no relacional. <br>
+ Dentro de las Colecciones existen 2 grandes tipos. Las Top level collection o colecciones de nivel superior y las subcollections o subcolecciones. Estas últimas viven únicamente dentro de un documento padre. ¿Cómo saber cuál escoger? Para determinar si tu colección debe ser top level o subcolección no hay una regla escrita en piedra y más bien tiene que ver con el caso de uso en particular y con la experiencia que hayas ganado como desarrollador. Lo cierto es que no hay una sola forma de estructurar nuestra DB basada en documentos, y por tanto no existe una respuesta correcta, sin embargo a continuación te ofrezco un par de reglas guía que puedes utilizar para transformar tu proyecto que ya trabajaste en bases de datos relacionales en un proyecto no relacional. <br>
 
 REGLAS | Descripción
 ------------- | -------------
@@ -1489,13 +1267,13 @@ Regla 2 | La colección tiene vida propia: Esta regla se refiere a que la excepc
 
 ### Bases de datos en la vida real
 
-> -Para datos historicos, queries complejos usar bigquery optimizado para datawherehouse. <br>
-> -Para datos del estado de nuestra aplicacion usa colecciones con mongo o firebase. <br>
-> -Puedes usar dos bases de datos en un mismo proyecto, guardar datos de mongo, convertirlos pasarlos a bigquery y hacer analisis sobre ellos.
+ -Para datos historicos, queries complejos usar bigquery optimizado para datawherehouse. <br>
+ -Para datos del estado de nuestra aplicacion usa colecciones con mongo o firebase. <br>
+ -Puedes usar dos bases de datos en un mismo proyecto, guardar datos de mongo, convertirlos pasarlos a bigquery y hacer analisis sobre ellos.
 
 ### Big Data
 
-> Big Data es un concepto que nace de la necesidad de manejar grandes cantidades de datos. La tendencia comenzó con compañías como YouTube al tener la necesidad de guardar y consultar mucha información de manera rápida. Es un gran movimiento que consiste en el uso de diferentes tipos de bases de datos.Un ejemplo es cassandra pero tiene ciertos tipos de desventaja, su ventaja manejar datos masivos a gran velocidad
+ Big Data es un concepto que nace de la necesidad de manejar grandes cantidades de datos. La tendencia comenzó con compañías como YouTube al tener la necesidad de guardar y consultar mucha información de manera rápida. Es un gran movimiento que consiste en el uso de diferentes tipos de bases de datos.Un ejemplo es cassandra pero tiene ciertos tipos de desventaja, su ventaja manejar datos masivos a gran velocidad
 
 <br>
 <div align="center"> 
@@ -1503,11 +1281,11 @@ Regla 2 | La colección tiene vida propia: Esta regla se refiere a que la excepc
   <h5> Big data </h5>
 </div>
 
-### Data warehouse
+### Data Warehouse
 
-> Data Warehouse trata de guardar cantidades masivas de datos para la posteridad. Allí se guarda todo lo que no está viviendo en la aplicación pero es necesario tenerlo. Debe servir para guardar datos por un largo periodo de tiempo y estos datos se deben poder usar para poder encontrar cuestiones interesantes para el negocio. Google usa BigTable, usa una sola tabla, pero no sirve tanto para hacer consultas. Data Warehouse es un archivo historico, archivo muerto, en otra base de datos. Sirve para dos actividades principales: Guarda una gran cantidad de datos de forma "eterna" y Poder extraer los datos para hacer analitica. <br>
+ Data Warehouse trata de guardar cantidades masivas de datos para la posteridad. Allí se guarda todo lo que no está viviendo en la aplicación pero es necesario tenerlo. Debe servir para guardar datos por un largo periodo de tiempo y estos datos se deben poder usar para poder encontrar cuestiones interesantes para el negocio. Google usa BigTable, usa una sola tabla, pero no sirve tanto para hacer consultas. Data Warehouse es un archivo historico, archivo muerto, en otra base de datos. Sirve para dos actividades principales: Guarda una gran cantidad de datos de forma "eterna" y Poder extraer los datos para hacer analitica. <br>
 
-> *NOTA: Diferencia de Big Data y Data Warehouse: Supongamos que está la biblioteca central, donde se guardan todos los documentos históricos existentes para consultarlos de vez en cuando, ese seria el Data Warehouse. Ahora imagínate esa misma biblioteca pero está tiene una cantidad masiva de libros que no son históricos, sino actuales, que te sirven y los puedes consultar más a menudo en comparación con el caso de los libros históricos de años muy pasados, ese seria el Big Data.*
+ *NOTA: Diferencia de Big Data y Data Warehouse: Supongamos que está la biblioteca central, donde se guardan todos los documentos históricos existentes para consultarlos de vez en cuando, ese seria el Data Warehouse. Ahora imagínate esa misma biblioteca pero está tiene una cantidad masiva de libros que no son históricos, sino actuales, que te sirven y los puedes consultar más a menudo en comparación con el caso de los libros históricos de años muy pasados, ese seria el Big Data.*
 
 <br>
 <div align="center"> 
@@ -1515,9 +1293,9 @@ Regla 2 | La colección tiene vida propia: Esta regla se refiere a que la excepc
   <h5> Data warehouse </h5>
 </div>
 
-### Data mining
+### Data Mining
 
-> El Data Mining se dedica a minar datos, a extraerlos de donde sea que estén (archivos muertos, base de datos actual, etc…) y hacer sentido de ellos para darles un uso.La capacidad predictiva del data mining ha cambiado el diseño de las estrategias empresariales. Ahora se puede entender el presente para anticiparse al futuro. Estos son algunos ejemplos de data mining en la industria actual:
+ El Data Mining se dedica a minar datos, a extraerlos de donde sea que estén (archivos muertos, base de datos actual, etc…) y hacer sentido de ellos para darles un uso.La capacidad predictiva del data mining ha cambiado el diseño de las estrategias empresariales. Ahora se puede entender el presente para anticiparse al futuro. Estos son algunos ejemplos de data mining en la industria actual:
 
 ÁREAS | Descripción
 ------------- | -------------
@@ -1527,13 +1305,13 @@ Banca | Los bancos recurren a la minería de datos para entender mejor los riesg
 Medicina | La minería de datos favorece diagnósticos más precisos. Al contar con toda la información del paciente —historial, examen físico y patrones de terapias anteriores— se pueden prescribir tratamientos más efectivos. También posibilita una gestión más eficaz, eficiente y económica de los recursos sanitarios al identificar riesgos, predecir enfermedades en ciertos segmentos de la población o pronosticar la duración del ingreso hospitalario. Detectar fraudes e irregularidades y estrechar vínculos con los pacientes al ahondar en el conocimiento de sus necesidades son también ventajas de emplear el data mining en medicina.
 Televisión y radio | Hay cadenas que aplican la minería de datos en tiempo real a sus registros de audiencia en televisión online (IPTV) y radio. Estos sistemas recaban y analizan sobre la marcha información anónima de las visualizaciones, las retransmisiones y la programación de los canales. Gracias al data mining se pueden emitir recomendaciones personalizadas a los radioyentes y telespectadores, conocer en directo sus intereses y su actividad, y entender mejor su conducta. Las cadenas obtienen, además, conocimiento muy valioso para sus anunciantes, que aprovechan estos datos para llegar con más precisión a sus clientes potenciales.
 
-> *NOTA: "Data mining, consiste en torturar los datos hasta que confiesen"*
+ *NOTA: "Data mining, consiste en torturar los datos hasta que confiesen"*
 
 ### ETL
 
-> ETL son las siglas de Extract, Transform, Load (extraer, transformar y cargar). Se trata de tomar datos de archivos muertos y convertirlos en algo que sea de utilidad para el negocio. También ayuda a tomar los datos vivos de la aplicación, transformarlos y guardarlos en un data warehouse periódicamente.
+ ETL son las siglas de Extract, Transform, Load (extraer, transformar y cargar). Se trata de tomar datos de archivos muertos y convertirlos en algo que sea de utilidad para el negocio. También ayuda a tomar los datos vivos de la aplicación, transformarlos y guardarlos en un data warehouse periódicamente.
 
->ETL: sirve de 2 formas particulares para obtener valor de los datos en bruto.Para extraer data muerta de un Data Warehouse y realizar diferentes procesos con ella (transformarla, calcularla, limpiarla, e.t.c) para obtener valor de ella. Sirve también para pasar información viva de la aplicación con sus estados actuales, y luego de un tiempo definido, realizar esta tecnica de ETL para transformar la información y luego almacenarla en un Data Warehouse
+ETL: sirve de 2 formas particulares para obtener valor de los datos en bruto.Para extraer data muerta de un Data Warehouse y realizar diferentes procesos con ella (transformarla, calcularla, limpiarla, e.t.c) para obtener valor de ella. Sirve también para pasar información viva de la aplicación con sus estados actuales, y luego de un tiempo definido, realizar esta tecnica de ETL para transformar la información y luego almacenarla en un Data Warehouse
 
 <br>
 <div align="center"> 
@@ -1543,11 +1321,11 @@ Televisión y radio | Hay cadenas que aplican la minería de datos en tiempo rea
 
 ### Business intelligence
 
-> Business Intelligence es una parte muy importante de las carreras de datos ya que es el punto final del manejo de estos. Su razón de ser es tener la información lista, clara y que tenga todos los elementos para tomar decisiones en una empresa. Es necesario tener una buena sensibilidad por entender el negocio, sus necesidades y la información que puede llevar a tomar decisiones en el momento adecuado al momento de realizar business intelligence.
+ Business Intelligence es una parte muy importante de las carreras de datos ya que es el punto final del manejo de estos. Su razón de ser es tener la información lista, clara y que tenga todos los elementos para tomar decisiones en una empresa. Es necesario tener una buena sensibilidad por entender el negocio, sus necesidades y la información que puede llevar a tomar decisiones en el momento adecuado al momento de realizar business intelligence.
 
 ### Machine Learning
 
-> Machine Learning tiene significados que varían. Es una serie de técnicas que involucran la inteligencia artificial y la detección de patrones. Machine learning para datos tiene un gran campo de acción y es un paso más allá del business intelligence. Nos ayuda a hacer modelos que encuentran patrones fortuitos encontrando correlaciones inesperadas. Tiene dos casos de uso particulares: Clasificación y Predicción.
+ Machine Learning tiene significados que varían. Es una serie de técnicas que involucran la inteligencia artificial y la detección de patrones. Machine learning para datos tiene un gran campo de acción y es un paso más allá del business intelligence. Nos ayuda a hacer modelos que encuentran patrones fortuitos encontrando correlaciones inesperadas. Tiene dos casos de uso particulares: Clasificación y Predicción.
 
 CONCEPTOS | Descripción
 ------------- | -------------
@@ -1555,11 +1333,11 @@ IA | abarca a machine learning y deep learning y busca eliminar al humano en la 
 Machine learning | como dijo Israel, crea modelo y al señarle te encontrada modelos fortuitos, cuando le des una mar de datos él te va encontrar patrones
 Deep learning | le busca sentido a los datos.
 
-> Una IA es un sistema que es inteligente, usando machine learning puedes buscar en una BBDD cuando tus clientes te compran más y te daras cuenta que es en finales de años y usando deep learning la computadora es capaz de encontrar el porqué te compran más.
+ Una IA es un sistema que es inteligente, usando machine learning puedes buscar en una BBDD cuando tus clientes te compran más y te daras cuenta que es en finales de años y usando deep learning la computadora es capaz de encontrar el porqué te compran más.
 
 ### Data Science
 
-> Data Science es aplicar todas las técnicas de procesamiento de datos. En su manera más pura tiene que ver con gente con un background de estadísticas y ciencias duras.Es aplicar todo lo que hemos visto, tecnicas de ETL, Data Mining, Business Intelligence. Aunque esta mas dirigida a personas con background de estadisticas, hoy en dia tambien participan personas con el perfil de Data Engineering. Al hacer Data Science estamos aplicando todo lo visto en los temas anteriores, no solo a nivel tecnico sino que desarrollamos la experiencia y conocimientos sobre las distintas tecnologias, en que parte del desarrollo de nuestro proyecto tenemos que utilizarlas, etc. Con lo cual el Data Science juega el papel de manager dentro de un equipo de profesionales de datos.
+ Data Science es aplicar todas las técnicas de procesamiento de datos. En su manera más pura tiene que ver con gente con un background de estadísticas y ciencias duras.Es aplicar todo lo que hemos visto, tecnicas de ETL, Data Mining, Business Intelligence. Aunque esta mas dirigida a personas con background de estadisticas, hoy en dia tambien participan personas con el perfil de Data Engineering. Al hacer Data Science estamos aplicando todo lo visto en los temas anteriores, no solo a nivel tecnico sino que desarrollamos la experiencia y conocimientos sobre las distintas tecnologias, en que parte del desarrollo de nuestro proyecto tenemos que utilizarlas, etc. Con lo cual el Data Science juega el papel de manager dentro de un equipo de profesionales de datos.
 
 <br>
 <div align="center"> 
@@ -1570,13 +1348,13 @@ Deep learning | le busca sentido a los datos.
 
 ### Por que aprender bases de datos hoy
 
-> ¡Has concluido el curso! Ahora tienes potentes herramientas y posibilidades para ingresar en este apasionante campo. Llevaste diagramas a bases de datos, exploraste un poco el mundo de las bases de datos no relacionales, hicimos un proyecto en firestore y transformamos Platzi blog de una base de datos relacional en una base de datos de documentos. Dentro de las posibilidades que tienes hoy en día puedes hacer: Machine learning, ETL, Data Warehouse, Data mining, entre otros.
+ ¡Has concluido el curso! Ahora tienes potentes herramientas y posibilidades para ingresar en este apasionante campo. Llevaste diagramas a bases de datos, exploraste un poco el mundo de las bases de datos no relacionales, hicimos un proyecto en firestore y transformamos Platzi blog de una base de datos relacional en una base de datos de documentos. Dentro de las posibilidades que tienes hoy en día puedes hacer: Machine learning, ETL, Data Warehouse, Data mining, entre otros.
 Recuerda practicar mucho con el proyecto. Te invito a que tomes el examen y verifiques tus conocimientos. ¡Exitos!
 
 ## Bonus
 
-### Bases de datos relacionales vs no relacionales
+### Bases de Datos Relacionales VS No Relacionales
 
-> -Las bases de datos relacionales han estado entre nosotros durante un largo tiempo y han sido usadas por grandes como Google, Amazon, entre otros. Aún son usadas por bancos, aseguradoras, etc. 
-> -Las bases de datos no relacionales surgen cuando las grandes empresas sintieron necesidad de guardar y extraer grandes cantidades de datos en muy cortos periodos de tiempo, como YouTube.
+ -Las bases de datos relacionales han estado entre nosotros durante un largo tiempo y han sido usadas por grandes como Google, Amazon, entre otros. Aún son usadas por bancos, aseguradoras, etc. 
+ -Las bases de datos no relacionales surgen cuando las grandes empresas sintieron necesidad de guardar y extraer grandes cantidades de datos en muy cortos periodos de tiempo, como YouTube.
 

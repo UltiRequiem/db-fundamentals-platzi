@@ -2,9 +2,11 @@
   <h1>Fundamentos de Bases de Datos</h1>
 </div>
 
-Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de Platzi. 
+Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de Platzi.
 
-## Indice
+Si llegas aqui desde [Platzi]()
+
+### Indice
 - [Conceptos Básicos y Contexto Histórico](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#CONCEPTOS-BÁSICOS-Y-CONTEXTO-HISTÓRICO)
   - [Historia del almacenamiento de la información](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Historia-del-almacenamiento-de-la-información)
   - [Surgimiento de las bases de datos](https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#Surgimiento-de-las-bases-de-datos)
@@ -79,7 +81,9 @@ Este repositorio contiene notas  y desarrollo de ejercicios del curso de [Fundam
 
 
 
-https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md# Datos del Profesor:
+https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md#https://github.com/EliazBobadilla/Fundamentos-Bases-de-Datos/blob/main/Notas/NotasFinal.md# 
+
+### Datos del Profesor:
 El curso es dictado por **Israel Vázquez** ,Senior Web Developer en SF startup YouNoodle.
 
 - [**Perfil de Platzi**](https://platzi.com/p/isravazquezmorales)

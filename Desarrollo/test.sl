@@ -1,0 +1,3 @@
+CREATE DATABASE test_db;
+
+USE DATABASE test_db;

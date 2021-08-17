@@ -2,9 +2,13 @@
   <h1>Fundamentos de Bases de Datos</h1>
 </div>
 
-Este repositorio contiene notas y desarrollo de ejercicios del curso de [Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de [Platzi](https://platzi.com/r/UltiRequiem).
+Este repositorio contiene notas y desarrollo de ejercicios del curso de
+[Fundamentos de Bases de Datos](https://platzi.com/clases/bd) de [Platzi](https://platzi.com/r/UltiRequiem).
 
-Si llegas aqui desde [Platzi](https://platzi.com/r/UltiRequiem), y ya manejas [Git y GitHub](https://platzi.com/clases/git-github/), te recomiendo hacerle un `git clone` para que lo trabajes de forma local.Si no simplemente descarga el codigo fuente en formato _zip_.
+Si llegas aqui desde [Platzi](https://platzi.com/r/UltiRequiem),
+y ya manejas [Git y GitHub](https://platzi.com/clases/git-github/),
+te recomiendo hacerle un `git clone` para que lo trabajes de forma local.
+Si no simplemente descarga el codigo fuente en formato _zip_.
 
 **Si este repositorio te ayudo, o simplemente te gusto,considera darle una estrella.**
 
